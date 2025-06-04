@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luxurious+Script&family=MonteCarlo&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Invitatie Botez</title>
+  </head>
+  <body>
+    <div class="frame"></div>
+    <div class="frame2"></div>
+    <img class="bear-img" src="./img/bear-blue.png" alt="bear" />
+    <img class="carriage-img" src="./img/carriege-blue.png" alt="carriage" />
+
+    <img class="clouds-img" src="./img/clouds-blue-left.png" alt="clouds" />
+    <img class="clouds-img2" src="./img/clouds-blue-right.png" alt="clouds" />
+    <img class="clouds-img3" src="./img/clouds-blue-left.png" alt="clouds" />
+    <img class="clouds-img4" src="./img/clouds-blue-right.png" alt="clouds" />
+    <img
+      class="clouds-mobile-top"
+      src="./img/clouds-blue-top.png"
+      alt="clouds"
+    />
+    <img
+      class="clouds-mobile-bottom"
+      src="./img/clouds-blue-bottom.png"
+      alt="clouds"
+    />
+    <img
+      class="clouds-mobile-top2"
+      src="./img/clouds-blue-top.png"
+      alt="clouds"
+    />
+    <img
+      class="clouds-mobile-bottom2"
+      src="./img/clouds-blue-bottom.png"
+      alt="clouds"
+    />
+    <div class="invitation">
+      <div class="text-container fade-in">
+        <div class="blur-top"></div>
+        <div class="blur-bottom"></div>
+        <p class="intro-text">
+          Sunt un prinț voies, <br />
+          Iubit de toți din casă. <br />
+          Și v-aștept cu nerăbdare, <br />
+          La o mare sărbătoare. <br />
+        </p>
+        <p style="font-family: 'Luxurious Script', italic; font-size: 2rem">
+          Mă numesc...
+        </p>
+        <h1 class="child-name">Bogdan</h1>
+
+        <div class="family-container">
+          <p class="parents">
+            Împreună cu PĂRINȚII, <br />
+            <strong>Alex</strong> &amp; <strong>Sabina</strong>
+          </p>
+
+          <p class="godparents">
+            Alături de NAȘII, <br />
+            <div class="godparents-names"><div><strong>Vlad</strong> &amp; <strong>Andreea</strong></div><div>
+              <strong>Marius</strong> &amp; <strong>Ana Maria</strong></div></div>
+            
+          </p>
+        </div>
+
+        <p class="invitation-text">
+          Avem plăcerea de a vă invita să sărbătorim împreună, într-un colț
+          frumos de natură la,
+          <span class="highlight">
+            <a
+              class="location-link"
+              href="https://maps.app.goo.gl/vyNvkCw1ZmFoq2Nz8"
+            >
+              <br />
+              <strong>Casa Vanatorului Oteleni. </strong>
+            </a> </span
+          ><br />
+        </p>
+        <a
+          href="https://maps.app.goo.gl/vyNvkCw1ZmFoq2Nz8"
+          target="_blank"
+          class="maps-btn"
+          >Vezi locatia</a
+        >
+
+        <p class="date">SAMBATA | <span class="day">2</span> | AUGUST</p>
+
+        <p class="dress-code">
+          👗 Ținută recomandată:
+          <strong>boho chic, white party</strong> (potrivită pentru petrecere în
+          grădină)
+        </p>
+        <p class="confirmation-request">
+          🙏 Te rugăm să ne confirmi participarea<br />
+          până la <strong>15 iulie 2025.</strong>
+        </p>
+        <div class="contacts">
+          <div>
+            <p class="contacts-names">Alex</p>
+            <div class="phone-container">
+              <img
+                class="phone-icon"
+                src="./img/phone-icon.svg"
+                width="30px"
+                height="30px"
+                ="icon telefon"
+              />
+              <a href="tel:+4075647635" class="phone-nr">0740.645.796</a>
+            </div>
+          </div>
+          <div>
+            <p class="contacts-names">Sabina</p>
+            <div class="phone-container">
+              <img
+                class="phone-icon"
+                src="./img/phone-icon.svg"
+                width="30px"
+                height="30px"
+                ="icon telefon"
+              />
+              <a href="tel:+40746424919" class="phone-nr">0746.457.919</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="submit-btn" class="confirm-btn">
+          Confirmă
+        </button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <button type="button" id="close-btn">✕</button>
+      <iframe src="" frameborder="0" marginheight="0" marginwidth="0"
+        >Se încarcă…</iframe
+      >
+    </div>
+    <div class="frame-top"></div>
+    <div class="frame-bottom"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const submitBtn = document.getElementById("submit-btn");
+        const modal = document.querySelector(".modal");
+        const closeBtn = document.getElementById("close-btn");
+
+        console.log("submitBtn:", submitBtn);
+        console.log("modal:", modal);
+        console.log("closeBtn:", closeBtn);
+
+        submitBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Am apăsat pe Confirmă!");
+          modal.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>

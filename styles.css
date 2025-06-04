@@ -1,0 +1,498 @@
+:root {
+  --primaryName: #59aec3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background: radial-gradient(circle, #fff 20%, #f5f9fb 80%);
+  font-size: 1.4rem;
+  color: #555;
+}
+.frame-top,
+.frame-bottom {
+  background: #f5f9fb;
+  z-index: 0;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+}
+.frame-top {
+  top: 0;
+}
+.frame-bottom {
+  bottom: 0;
+}
+
+.frame,
+.frame2 {
+  position: fixed;
+  border: 5px ridge rgb(203, 179, 69);
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  background: transparent;
+  pointer-events: none;
+}
+.frame2 {
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+}
+.blur-top,
+.blur-bottom {
+  position: fixed;
+  width: 80%;
+  height: 60px;
+  z-index: 1;
+}
+.blur-bottom {
+  bottom: 47px;
+  background: linear-gradient(to top, white, transparent);
+}
+.blur-top {
+  top: 47px;
+  background: linear-gradient(to top, transparent, white);
+}
+img {
+  position: fixed;
+}
+.bear-img {
+  width: 334px;
+  bottom: -50px;
+  left: 0;
+  z-index: 10;
+}
+
+.carriage-img {
+  width: 372px;
+  bottom: -30px;
+  right: 0;
+  z-index: 10;
+}
+
+.clouds-img {
+  z-index: 9;
+  bottom: -163px;
+  left: -157px;
+}
+.clouds-img2 {
+  z-index: 9;
+  bottom: -163px;
+  right: -157px;
+}
+.clouds-img3 {
+  z-index: 9;
+  left: -125px;
+  bottom: -351px;
+}
+.clouds-img4 {
+  z-index: 9;
+  right: -125px;
+  bottom: -351px;
+}
+.invitation {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  gap: 35px;
+  padding: 6rem 3rem;
+}
+p {
+  text-align: center;
+  line-height: 1.7;
+}
+.intro-text {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Great Vibes", italic;
+  line-height: 1.4;
+}
+.child-name {
+  margin: 0;
+  font-size: 6rem;
+  font-family: "Luxurious Script", serif;
+  font-weight: 500;
+  font-style: normal;
+  animation: glow 3s ease-in-out infinite;
+  color: var(--primaryName);
+  opacity: unset;
+}
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 6px rgba(203, 200, 255, 0.5),
+      0 0 12px rgba(175, 184, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(255, 255, 200, 0.8),
+      0 0 24px rgba(251, 255, 175, 0.6);
+  }
+}
+
+.family-container {
+  display: flex;
+  gap: 25px;
+}
+.family-container strong {
+  font-family: "STIX Two Text", serif;
+  color: #dcbc6b;
+  font-size: 1.5rem;
+}
+.godparents-names {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.parents,
+.godparents {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+}
+.invitation-text {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+.location-link {
+  font-family: "STIX Two Text", serif;
+  text-decoration: none;
+  color: #dcbc6b;
+  font-size: 1.8rem;
+}
+.date {
+  font-family: "STIX Two Text", serif;
+  color: var(--primaryName);
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.day {
+  font-size: 4rem;
+  color: var(--primaryName);
+}
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts-names {
+  color: #555555dc;
+  font-weight: 500;
+  font-family: "Great Vibes", italic;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+.contacts-names::first-letter {
+  font-family: "Luxurious Script", serif;
+  font-size: 3rem;
+  padding-right: 2.5px;
+}
+.phone-nr {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.phone-nr:hover {
+  color: var(--primaryName);
+}
+.phone-icon {
+  position: unset;
+  align-items: center;
+}
+.phone-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+.confirm-btn {
+  animation: pulse 2s infinite;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-style: italic;
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 2rem;
+  background-color: var(--primaryName);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  margin-bottom: 160px;
+  opacity: unset;
+}
+
+.confirm-btn:hover {
+  background-color: wheat;
+  color: #555;
+}
+.maps-btn {
+  animation: pulse 2s infinite;
+  opacity: unset;
+  width: 160px;
+  background-color: #fffdfa7b;
+  color: var(--primaryName);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Libre Baskerville", serif;
+  border: 1px solid #c7a758;
+  border-radius: 4px;
+  padding: 7px 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0px;
+}
+.maps-btn:hover {
+  background-color: var(--primaryName);
+  color: white;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 90vh;
+  background: radial-gradient(circle, #fff 20%, #fbf5f5 80%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  z-index: 9999;
+  display: none;
+
+  /* ascuns inițial */
+}
+.modal iframe {
+  width: 100%;
+  height: 90%;
+  border: none;
+}
+.modal button {
+  opacity: unset;
+  animation: pulse 2s infinite;
+  float: right;
+  padding: 10px;
+  background-color: var(--primaryName);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #fbf5f5;
+  margin-top: 15px;
+}
+.clouds-mobile-top,
+.clouds-mobile-bottom,
+.clouds-mobile-bottom2,
+.clouds-mobile-top2 {
+  display: none;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(241, 149, 149, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(241, 149, 149, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(241, 149, 149, 0);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* .invitation {
+  } */
+  .text-container {
+    width: 80%;
+  }
+  .bear-img {
+    width: 30%;
+  }
+  .carriage-img {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .frame-top,
+  .frame-bottom {
+    height: 35px;
+  }
+  .blur-top,
+  .blur-bottom {
+    position: fixed;
+    width: 85%;
+    height: 60px;
+    z-index: 1;
+  }
+  .blur-bottom {
+    bottom: 32px;
+    background: linear-gradient(to top, white, transparent);
+  }
+  .blur-top {
+    top: 32px;
+    background: linear-gradient(to top, transparent, white);
+  }
+  .bear-img {
+    width: 120px;
+    bottom: -30px;
+
+    left: 9px;
+  }
+  .carriage-img {
+    width: 145px;
+    bottom: -12px;
+    right: 0;
+  }
+  .clouds-img,
+  .clouds-img2,
+  .clouds-img3,
+  .clouds-img4 {
+    display: none;
+  }
+  .clouds-mobile-top {
+    width: 500px;
+    z-index: 9;
+    top: -56px;
+    left: -105px;
+    display: block;
+  }
+  .clouds-mobile-top2 {
+    top: -32px;
+    left: -3px;
+  }
+  .clouds-mobile-bottom {
+    bottom: -62px;
+    right: -102px;
+    width: 500px;
+    z-index: 9;
+    display: block;
+  }
+  .clouds-mobile-bottom2,
+  .clouds-mobile-top2 {
+    width: 500px;
+    z-index: 9;
+    display: block;
+  }
+  .clouds-mobile-bottom2 {
+    bottom: -41px;
+    left: -48px;
+  }
+
+  .frame {
+    padding: 1.3rem;
+    border: 3px ridge rgb(203, 179, 69);
+    top: 29px;
+    bottom: 28px;
+    left: 25px;
+    right: 25px;
+  }
+  .frame2 {
+    border: 3px ridge rgb(203, 179, 69);
+    top: 20px;
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+  }
+  .invitation {
+    margin-top: 25px;
+    padding: 1.4rem;
+  }
+  .text-container {
+    text-align: center;
+    padding: 4rem 1rem;
+    width: 100%;
+    gap: 20px;
+  }
+  .intro-text {
+    font-size: 1.4rem;
+  }
+  .child-name {
+    font-size: 4rem;
+  }
+  .family-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .family-container p {
+    font-size: 0.8rem;
+  }
+  .family-container strong {
+    font-size: 1.1rem;
+  }
+  .invitation-text {
+    font-size: 1rem;
+  }
+  .location-link {
+    font-size: 1rem;
+  }
+  .date {
+    font-size: 0.8rem;
+
+    gap: 7px;
+  }
+  .day {
+    font-size: 3rem;
+  }
+  .dress-code,
+  .confirmation-request {
+    font-family: "STIX Two Text", serif;
+    font-size: 1rem;
+  }
+  .contacts {
+    gap: 20px;
+  }
+  .contacts-names {
+    font-size: 1.4rem;
+  }
+  .contacts-names::first-letter {
+    font-size: 1.5rem;
+  }
+  .phone-nr {
+    font-size: 1rem;
+  }
+
+  .phone-icon {
+    position: unset;
+    width: 20px;
+    height: 20px;
+  }
+  .phone-container {
+    gap: 5px;
+  }
+  .confirm-btn {
+    width: 160px;
+    font-size: 1.3rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  .modal {
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+  }
+  .modal iframe {
+    width: 100%;
+    height: 90%;
+  }
+}

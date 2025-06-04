@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Modal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        max-width: 600px;
+        background: white;
+        border: 2px solid #e7a8a8;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        z-index: 9999;
+        display: none; /* ascuns inițial */
+      }
+      .modal iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+      }
+      .confirm-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #f19595;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="submit-btn" class="confirm-btn">Confirmă</button>
+
+    <div class="modal">
+      <button id="close-btn" style="float: right; width: 30px; height: 30px">
+        ✕
+      </button>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScw-GHCF_sFpmyWkWHpY93ycBpzKlcf-vAoyAUAJx0uJEgVxw/viewform?embedded=true"
+        >Se încarcă…</iframe
+      >
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const submitBtn = document.getElementById("submit-btn");
+        const modal = document.querySelector(".modal");
+        const closeBtn = document.getElementById("close-btn");
+
+        console.log("submitBtn:", submitBtn);
+        console.log("modal:", modal);
+        console.log("closeBtn:", closeBtn);
+
+        submitBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Am apăsat pe Confirmă!");
+          modal.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
