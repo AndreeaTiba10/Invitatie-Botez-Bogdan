@@ -442,8 +442,7 @@ p {
     flex-direction: column;
     gap: 10px;
   }
-  .family-container p,
-  .godparents {
+  .family-container p {
     font-size: 0.8rem;
   }
   .family-container strong {
