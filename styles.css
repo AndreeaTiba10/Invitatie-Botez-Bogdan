@@ -329,6 +329,10 @@ p {
   color: #fbf5f5;
   margin-top: 15px;
 }
+.first-letter::first-letter {
+  font-family: "Luxurious Script", serif;
+  font-size: larger;
+}
 .clouds-mobile-top,
 .clouds-mobile-bottom,
 .clouds-mobile-bottom2,
