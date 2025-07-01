@@ -178,7 +178,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .invitation-text {
@@ -200,7 +200,7 @@ p {
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
 }
 .day {
   font-size: 4rem;
@@ -244,11 +244,11 @@ p {
 }
 .confirm-btn {
   animation: pulse 2s infinite;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 500;
   font-style: italic;
   padding: 10px 20px;
-  width: 200px;
+  width: 250px;
   font-size: 2rem;
   background-color: var(--primaryName);
   color: white;
@@ -256,7 +256,7 @@ p {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
-
+  letter-spacing: 3px;
   margin-bottom: 160px;
   opacity: unset;
 }
@@ -282,10 +282,18 @@ p {
   justify-content: center;
   transition: all 0.3s ease-in-out;
   letter-spacing: 0px;
+  text-decoration: none;
 }
 .maps-btn:hover {
   background-color: var(--primaryName);
   color: white;
+}
+.location-icon {
+  position: unset;
+  width: 70px;
+  border-radius: 15px;
+  padding: 5px;
+  animation: pulse 2s infinite;
 }
 .modal {
   position: fixed;
@@ -459,8 +467,16 @@ p {
   .family-container strong {
     font-size: 1.1rem;
   }
+  .godparents-names {
+    flex-direction: column;
+    gap: 0px;
+    font-size: 0.4rem;
+  }
   .location-container {
-    gap: 10px;
+    gap: 15px;
+  }
+  .location-container:nth-child(2) {
+    gap: 0px;
   }
   .invitation-text {
     font-size: 1.4rem;
@@ -473,7 +489,12 @@ p {
     gap: 7px;
   }
   .day {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .maps-btn {
+    margin: 10px auto;
+    width: 130px;
+    font-size: 1rem;
   }
   .dress-code,
   .confirmation-request {
@@ -502,8 +523,8 @@ p {
     gap: 5px;
   }
   .confirm-btn {
-    width: 160px;
-    font-size: 1.3rem;
+    width: 130px;
+    font-size: 16px;
     justify-content: center;
     display: flex;
   }
