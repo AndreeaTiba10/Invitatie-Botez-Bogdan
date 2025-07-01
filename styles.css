@@ -178,7 +178,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 45px;
 }
 
 .invitation-text {
@@ -499,7 +499,7 @@ p {
   .dress-code,
   .confirmation-request {
     font-family: "STIX Two Text", serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .contacts {
     gap: 20px;
