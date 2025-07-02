@@ -136,7 +136,7 @@ p {
 @keyframes glow {
   0%,
   100% {
-    text-shadow: 0 0 6px rgba(203, 200, 255, 0.5),
+    text-shadow: 0 0 6px rgba(203, 200, 255, 0.684),
       0 0 12px rgba(175, 184, 255, 0.3);
   }
   50% {
@@ -392,7 +392,7 @@ p {
     width: 120px;
     bottom: -30px;
 
-    left: 9px;
+    left: 0;
   }
   .carriage-img {
     width: 145px;
