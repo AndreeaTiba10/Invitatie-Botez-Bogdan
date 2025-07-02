@@ -124,7 +124,7 @@ p {
   line-height: 1.4;
 }
 .child-name {
-  margin: 20px;
+  margin: 20px auto;
   font-size: 6rem;
   font-family: "Luxurious Script", serif;
   font-weight: 500;
